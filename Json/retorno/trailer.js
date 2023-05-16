@@ -4,12 +4,12 @@ module.exports = {
         "type": "9",
         "len": 1
     },
-    "CÓDIGODERETORNO": {
+    "CODIGODERETORNO": {
         "data": "2",
         "type": "9",
         "len": 1
     },
-    "CÓDIGODESERVIÇO": {
+    "CODIGODESERVICO": {
         "data": "",
         "type": "9",
         "len": 2
@@ -19,7 +19,7 @@ module.exports = {
         "type": "X",
         "len": 8
     },
-    "CÓDIGOSDEERRO": {
+    "CODIGOSDEERRO": {
         "data": "NOTA23",
         "type": "X",
         "len": 30
@@ -34,7 +34,7 @@ module.exports = {
         "type": "9",
         "len": 15
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NÚMEROSEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

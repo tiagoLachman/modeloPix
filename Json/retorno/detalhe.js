@@ -9,7 +9,7 @@ module.exports = {
         "type": "X",
         "len": 8
     },
-    "CÓDIGODEINSCRIÇÃO": {
+    "CODIGODEINSCRICAO": {
         "data": "NOTA1",
         "type": "9",
         "len": 2
@@ -39,12 +39,12 @@ module.exports = {
         "type": "X",
         "len": 77
     },
-    "TIPOCOBRANÇA": {
+    "TIPOCOBRANCA": {
         "data": "",
         "type": "X",
         "len": 1
     },
-    "CÓD.DOMOVIMENTO": {
+    "COD.DOMOVIMENTO": {
         "data": "",
         "type": "9",
         "len": 2
@@ -59,7 +59,7 @@ module.exports = {
         "type": "X",
         "len": 35
     },
-    "EXPIRAÇÃO": {
+    "EXPIRACAO": {
         "data": "",
         "type": "9",
         "len": 15
@@ -117,7 +117,7 @@ module.exports = {
             "2": 2
         }
     },
-    "TARIFADECOBRANÇA": {
+    "TARIFADECOBRANCA": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -125,7 +125,7 @@ module.exports = {
             "2": 2
         }
     },
-    "CÓDIGODEINSCRIÇÃODEVEDOR": {
+    "CODIGODEINSCRICAODEVEDOR": {
         "data": "",
         "type": "9",
         "len": 2
@@ -140,7 +140,7 @@ module.exports = {
         "type": "X",
         "len": 140
     },
-    "CÓDIGODEINSCRIÇÃOPAGADORFINAL": {
+    "CODIGODEINSCRICAOPAGADORFINAL": {
         "data": "",
         "type": "9",
         "len": 2
@@ -155,7 +155,7 @@ module.exports = {
         "type": "X",
         "len": 140
     },
-    "CÓD.DELIQUIDAÇÃO": {
+    "COD.DELIQUIDACAO": {
         "data": "",
         "type": "X",
         "len": 2
@@ -165,7 +165,7 @@ module.exports = {
         "type": "X",
         "len": 35
     },
-    "CÓDIGOSDEERRO": {
+    "CODIGOSDEERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -175,7 +175,7 @@ module.exports = {
         "type": "X",
         "len": 47
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NUMEROSEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

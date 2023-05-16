@@ -9,7 +9,7 @@ module.exports = {
         "type": "X",
         "len": 77
     },
-    "CÓD.DOMOVIMENTO": {
+    "CUD.DOMOVIMENTO": {
         "data": "",
         "type": "9",
         "len": 2
@@ -39,7 +39,7 @@ module.exports = {
         "type": "X",
         "len": 44
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NUMEROSEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

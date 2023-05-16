@@ -4,7 +4,7 @@ module.exports = {
         "type": "9",
         "len": 1
     },
-    "OPERAÇÃO": {
+    "OPERACÃO": {
         "data": "1",
         "type": "9",
         "len": 1
@@ -14,12 +14,12 @@ module.exports = {
         "type": "X",
         "len": 7
     },
-    "CÓDIGODOSERVIÇO": {
+    "CÓDIGODOSERVICO": {
         "data": "02",
         "type": "9",
         "len": 2
     },
-    "LITERALDESERVIÇO": {
+    "LITERALDESERVICO": {
         "data": "PIX",
         "type": "X",
         "len": 15
@@ -29,7 +29,7 @@ module.exports = {
         "type": "X",
         "len": 8
     },
-    "CÓDIGODEINSCRIÇÃO": {
+    "CÓDIGODEINSCRICÃO": {
         "data": "NOTA1",
         "type": "9",
         "len": 2
@@ -59,7 +59,7 @@ module.exports = {
         "type": "X",
         "len": 77
     },
-    "DATADEGERAÇÃO": {
+    "DATADEGERACÃO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
@@ -84,7 +84,7 @@ module.exports = {
         "type": "9",
         "len": 3
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NUMEROSEQUENCIAL": {
         "data": "000001",
         "type": "9",
         "len": 6

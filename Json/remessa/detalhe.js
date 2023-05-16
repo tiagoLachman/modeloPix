@@ -4,7 +4,7 @@ module.exports = {
         "type": "9",
         "len": 1
     },
-    "CÓDIGODEINSCRIÇÃO": {
+    "CÓDIGODEINSCRICAO": {
         "data": "NOTA1",
         "type": "9",
         "len": 2
@@ -14,7 +14,7 @@ module.exports = {
         "type": "9",
         "len": 14
     },
-    "AGÊNCIA": {
+    "AGENCIA": {
         "data": "",
         "type": "9",
         "len": 4
@@ -34,12 +34,12 @@ module.exports = {
         "type": "X",
         "len": 77
     },
-    "TIPOCOBRANÇA": {
+    "TIPOCOBRANCA": {
         "data": "",
         "type": "X",
         "len": 1
     },
-    "CÓD.DEOCORRÊNCIA": {
+    "CÓD.DEOCORRENCIA": {
         "data": "",
         "type": "9",
         "len": 2
@@ -49,7 +49,7 @@ module.exports = {
         "type": "X",
         "len": 35
     },
-    "EXPIRAÇÃO": {
+    "EXPIRACAO": {
         "data": "",
         "type": "9",
         "len": 15
@@ -96,12 +96,12 @@ module.exports = {
             "2": 2
         }
     },
-    "PERMITEALTERAÇÃO": {
+    "PERMITEALTERACAO": {
         "data": "",
         "type": "X",
         "len": 1
     },
-    "CÓDIGODEINSCRIÇÃODEVEDOR": {
+    "CÓDIGODEINSCRICAODEVEDOR": {
         "data": "",
         "type": "9",
         "len": 2
@@ -116,7 +116,7 @@ module.exports = {
         "type": "X",
         "len": 140
     },
-    "SOLICITAÇÃOAOPAGADOROUCAMPOTEXTOLIVRE": {
+    "SOLICITACAOAOPAGADOROUCAMPOTEXTOLIVRE": {
         "data": "",
         "type": "X",
         "len": 140
@@ -136,7 +136,7 @@ module.exports = {
         "type": "X",
         "len": 134
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NUMEROSEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

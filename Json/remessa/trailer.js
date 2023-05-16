@@ -22,7 +22,7 @@ module.exports = {
         "type": "9",
         "len": 15
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NUMEROSEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

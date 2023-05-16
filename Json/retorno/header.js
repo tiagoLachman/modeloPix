@@ -4,7 +4,7 @@ module.exports = {
         "type": "9",
         "len": 1
     },
-    "CÓDIGODERETORNO": {
+    "CODIGODERETORNO": {
         "data": "2",
         "type": "9",
         "len": 1
@@ -14,12 +14,12 @@ module.exports = {
         "type": "X",
         "len": 7
     },
-    "CÓDIGODOSERVIÇO": {
+    "CODIGODOSERVICO": {
         "data": "02",
         "type": "9",
         "len": 2
     },
-    "LITERALDESERVIÇO": {
+    "LITERALDESERVICO": {
         "data": "PIX",
         "type": "X",
         "len": 15
@@ -29,7 +29,7 @@ module.exports = {
         "type": "X",
         "len": 8
     },
-    "CÓDIGODEINSCRIÇÃO": {
+    "CODIGODEINSCRICAO": {
         "data": "NOTA1",
         "type": "9",
         "len": 2
@@ -59,12 +59,12 @@ module.exports = {
         "type": "X",
         "len": 77
     },
-    "DATADEGERAÇÃO": {
+    "DATADEGERACAO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
     },
-    "CÓDIGODOCONVENIO": {
+    "CODIGODOCONVENIO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -74,7 +74,7 @@ module.exports = {
         "type": "X",
         "len": 60
     },
-    "CÓDIGOSDEERRO": {
+    "CODIGOSDEERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -89,7 +89,7 @@ module.exports = {
         "type": "9",
         "len": 3
     },
-    "NÚMEROSEQÜENCIAL": {
+    "NUMEROSEQUENCIAL": {
         "data": "000001",
         "type": "9",
         "len": 6

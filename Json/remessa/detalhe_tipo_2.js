@@ -39,12 +39,12 @@ module.exports = {
         "type": "X",
         "len": 172
     },
-    "NÚMEROSEQÜENCIALDETALHE": {
+    "NUMEROSEQUENCIALDETALHE": {
         "data": "",
         "type": "9",
         "len": 6
     },
-    "NÚMEROSEQÜENCIALINFOADICIONAIS": {
+    "NUMEROSEQUENCIALINFOADICIONAIS": {
         "data": "",
         "type": "9",
         "len": 6
