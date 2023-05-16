@@ -7,27 +7,7 @@ let header = require("./Json/remessa/header");
 let detalhe = require("./Json/remessa/detalhe");
 let detalhe_2 = require("./Json/remessa/detalhe_tipo_2");
 let trailer = require("./Json/remessa/trailer");
-/*
-const header = require("./Json/retorno/header");
-const detalhe = require("./Json/retorno/detalhe");
-const detalhe_3 = require("./Json/retorno/detalhe_tipo_3");
-const detalhe_4 = require("./Json/retorno/detalhe_tipo_4");
-const trailer = require("./Json/retorno/trailer");
 
-let total = 0;
-let objSomar = trailer;
-
-Object.keys(objSomar).forEach(k => {
-    if(typeof(objSomar[k].len) != "number"){
-        total += objSomar[k].len["1"]
-        total += objSomar[k].len["2"]
-    }else{
-        total += objSomar[k].len;
-    }
-})
-console.log(`Total:${total}`)
-*/
-/*
 let ret = generateLine(header);
 console.log(ret);
 console.log(`${ret.length} Bytes`)
@@ -43,7 +23,7 @@ console.log(`${ret.length} Bytes`)
 ret = generateLine(detalhe_2);
 console.log(ret);
 console.log(`${ret.length} Bytes`)
-*/
+
 
 //header
 //console.log(parseToJson("02RETORNO02PIX------------1234----1212345678912345123412345678901234567890abcd1234----x01234----x01234----x01234----x01234----x01234----x01234----x01234---202304201234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x001234----x001234----x001234----x001234----x001234----x0012123000001"));
