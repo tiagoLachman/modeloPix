@@ -1,4 +1,4 @@
-const parseToJson = require("./CNBA750/returngetter")
+const parseToJson = require("./CNBA750/parseCnab")
 const generateLine = require("./CNBA750/generator")
 
 
