@@ -3,7 +3,6 @@ const generateLine = require("./CNBA750/generator")
 
 
 //Dados em json
-
 let header = require("./Json/remessa/header");
 let detalhe = require("./Json/remessa/detalhe");
 let detalhe_2 = require("./Json/remessa/detalhe_tipo_2");
@@ -62,7 +61,10 @@ let total_esperado=0;
 
 //Teste Detalhe tipo 4
 let objSomar = parseToJson("41234----x01234----x01234----x01234----x01234----x01234----x01234----x01234---12123456781234----x01234----x01234----x01234-1234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234---1234----x01234----x01234----x01234----x01234123332")
-
+/*
+let asd = "asd\nasd2\nasd3";
+let ret = asd.split("\n")
+*/
 console.log(objSomar)
 Object.keys(objSomar).forEach(k => {
     total_esperado=0;
