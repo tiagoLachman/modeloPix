@@ -18,10 +18,10 @@ function parseToJson(data) {
     }
     Object.keys(resObj).forEach((k) => {
         if(typeof(resObj[k].len) != "number"){
-            resObj[k].data = `${data.substring(0, resObj[k].len["1"])},`
-            data = data.substring(resObj[k].len);
+            resObj[k].data = data.substring(0, resObj[k].len["1"])+","
+            data = data.substring(resObj[k].len["1"]);
             resObj[k].data += data.substring(0, resObj[k].len["2"]);
-            data = data.substring(resObj[k].len);
+            data = data.substring(resObj[k].len["2"]);
         }else{
             resObj[k].data = data.substring(0, resObj[k].len);
             data = data.substring(resObj[k].len);
