@@ -56,8 +56,12 @@ let ret = asd.split("\n")
 const fs = require('fs');
 let data = fs.readFileSync('./txtcompleto.txt', { encoding: 'utf8', flag: 'r' });
 data = data.split("\r\n")
-
-
+/*
+for (let i = 0; i < data.length; i++) {
+    const element = data[i];
+    console.log(element.length)
+}
+*/
 for (let i = 0; i < data.length; i++) {
     if(data[i] == "") break;
     const objSomar = parseToJson(data[i]);
