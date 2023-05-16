@@ -1,20 +1,20 @@
 module.exports = {
-    "TIPO DE REGISTRO": {
+    "TIPODEREGISTRO": {
         "data": "1",
         "type": "9",
         "len": 1
     },
-    "ISPB PARTICIPANTE": {
+    "ISPBPARTICIPANTE": {
         "data": "",
         "type": "X",
         "len": 8
     },
-    "CÓDIGO DE INSCRIÇÃO": {
-        "data": "NOTA 1",
+    "CÓDIGODEINSCRIÇÃO": {
+        "data": "NOTA1",
         "type": "9",
         "len": 2
     },
-    "CPF CNPJ": {
+    "CPFCNPJ": {
         "data": "",
         "type": "9",
         "len": 14
@@ -29,27 +29,27 @@ module.exports = {
         "type": "9",
         "len": 20
     },
-    "TIPO CONTA": {
+    "TIPOCONTA": {
         "data": "",
         "type": "X",
         "len": 4
     },
-    "CHAVE Pix": {
+    "CHAVEPix": {
         "data": "",
         "type": "X",
         "len": 77
     },
-    "TIPO COBRANÇA": {
+    "TIPOCOBRANÇA": {
         "data": "",
         "type": "X",
         "len": 1
     },
-    "CÓD. DO MOVIMENTO": {
+    "CÓD.DOMOVIMENTO": {
         "data": "",
         "type": "9",
         "len": 2
     },
-    "DATA DO MOVIMENTO": {
+    "DATADOMOVIMENTO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
@@ -64,12 +64,12 @@ module.exports = {
         "type": "9",
         "len": 15
     },
-    "DATA DE VENCIMENTO": {
+    "DATADEVENCIMENTO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
     },
-    "VALOR ORIGINAL": {
+    "VALORORIGINAL": {
         "data": "123456789123456,32",
         "type": "9V9",
         "len": {
@@ -77,7 +77,7 @@ module.exports = {
             "2": 2
         }
     },
-    "VALOR JUROS": {
+    "VALORJUROS": {
         "data": "123456789123456,32",
         "type": "9V9",
         "len": {
@@ -85,7 +85,7 @@ module.exports = {
             "2": 2
         }
     },
-    "VALOR MULTA": {
+    "VALORMULTA": {
         "data": "123456789123456,32",
         "type": "9V9",
         "len": {
@@ -93,7 +93,7 @@ module.exports = {
             "2": 2
         }
     },
-    "VALOR DESCONTO/ABATIMENTO": {
+    "VALORDESCONTO/ABATIMENTO": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -101,7 +101,7 @@ module.exports = {
             "2": 2
         }
     },
-    "VALOR FINAL": {
+    "VALORFINAL": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -109,7 +109,7 @@ module.exports = {
             "2": 2
         }
     },
-    "VALOR PAGO": {
+    "VALORPAGO": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -117,7 +117,7 @@ module.exports = {
             "2": 2
         }
     },
-    "TARIFA DE COBRANÇA": {
+    "TARIFADECOBRANÇA": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -125,47 +125,47 @@ module.exports = {
             "2": 2
         }
     },
-    "CÓDIGO DE INSCRIÇÃO DEVEDOR": {
+    "CÓDIGODEINSCRIÇÃODEVEDOR": {
         "data": "",
         "type": "9",
         "len": 2
     },
-    "CPFCNPJ DEVEDOR": {
+    "CPFCNPJDEVEDOR": {
         "data": "",
         "type": "9",
         "len": 14
     },
-    "MENSAGEM PAGADOR FINAL": {
+    "MENSAGEMPAGADORFINAL": {
         "data": "",
         "type": "X",
         "len": 140
     },
-    "CÓDIGO DE INSCRIÇÃO PAGADOR FINAL": {
+    "CÓDIGODEINSCRIÇÃOPAGADORFINAL": {
         "data": "",
         "type": "9",
         "len": 2
     },
-    "CPFCNPJ PAGADOR FINAL": {
+    "CPFCNPJPAGADORFINAL": {
         "data": "",
         "type": "9",
         "len": 14
     },
-    "NOME PAGADOR FINAL": {
+    "NOMEPAGADORFINAL": {
         "data": "",
         "type": "X",
         "len": 140
     },
-    "CÓD. DE LIQUIDAÇÃO": {
+    "CÓD.DELIQUIDAÇÃO": {
         "data": "",
         "type": "X",
         "len": 2
     },
-    "END TO END ID": {
+    "ENDTOENDID": {
         "data": "",
         "type": "X",
         "len": 35
     },
-    "CÓDIGOS DE ERRO": {
+    "CÓDIGOSDEERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -175,7 +175,7 @@ module.exports = {
         "type": "X",
         "len": 47
     },
-    "NÚMERO SEQÜENCIAL": {
+    "NÚMEROSEQÜENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

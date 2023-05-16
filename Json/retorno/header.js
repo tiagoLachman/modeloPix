@@ -1,80 +1,80 @@
 module.exports = {
-    "TIPO DE REGISTRO": {
+    "TIPODEREGISTRO": {
         "data": "0",
         "type": "9",
         "len": 1
     },
-    "CÓDIGO DE RETORNO": {
+    "CÓDIGODERETORNO": {
         "data": "2",
         "type": "9",
         "len": 1
     },
-    "LITERAL DE RETORNO": {
+    "LITERALDERETORNO": {
         "data": "RETORNO",
         "type": "X",
         "len": 7
     },
-    "CÓDIGO DO SERVIÇO": {
+    "CÓDIGODOSERVIÇO": {
         "data": "02",
         "type": "9",
         "len": 2
     },
-    "LITERAL DE SERVIÇO": {
+    "LITERALDESERVIÇO": {
         "data": "PIX",
         "type": "X",
         "len": 15
     },
-    "ISPB PARTICIPANTE": {
-        "data": "Deve ser preenchido com ISPB do PSP Recebedor",
+    "ISPBPARTICIPANTE": {
+        "data": "DeveserpreenchidocomISPBdoPSPRecebedor",
         "type": "X",
         "len": 8
     },
-    "CÓDIGO DE INSCRIÇÃO ": {
-        "data": "NOTA 1",
+    "CÓDIGODEINSCRIÇÃO": {
+        "data": "NOTA1",
         "type": "9",
         "len": 2
     },
-    "CPF CNPJ": {
-        "data": "Identificação única do usuário recebedor",
+    "CPFCNPJ": {
+        "data": "Identificaçãoúnicadousuáriorecebedor",
         "type": "9",
         "len": 14
     },
     "AGÊNCIA": {
-        "data": "Agência do usuário recebedor",
+        "data": "Agênciadousuáriorecebedor",
         "type": "9",
         "len": 4
     },
     "CONTA": {
-        "data": "Número da conta transacional",
+        "data": "Númerodacontatransacional",
         "type": "9",
         "len": 20
     },
-    "TIPO CONTA": {
-        "data": "NOTA 2",
+    "TIPOCONTA": {
+        "data": "NOTA2",
         "type": "X",
         "len": 4
     },
-    "CHAVE Pix": {
-        "data": "NOTA 3",
+    "CHAVEPix": {
+        "data": "NOTA3",
         "type": "X",
         "len": 77
     },
-    "DATA DE GERAÇÃO": {
+    "DATADEGERAÇÃO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
     },
-    "CÓDIGO DO CONVENIO": {
+    "CÓDIGODOCONVENIO": {
         "data": "",
         "type": "X",
         "len": 30
     },
-    "EXCLUSIVO PSP RECEBEDOR": {
+    "EXCLUSIVOPSPRECEBEDOR": {
         "data": "",
         "type": "X",
         "len": 60
     },
-    "CÓDIGOS DE ERRO": {
+    "CÓDIGOSDEERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -84,12 +84,12 @@ module.exports = {
         "type": "X",
         "len": 458
     },
-    "VERSAO DO ARQUIVO": {
+    "VERSAODOARQUIVO": {
         "data": "",
         "type": "9",
         "len": 3
     },
-    "NÚMERO SEQÜENCIAL": {
+    "NÚMEROSEQÜENCIAL": {
         "data": "000001",
         "type": "9",
         "len": 6

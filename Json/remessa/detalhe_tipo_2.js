@@ -1,5 +1,5 @@
 module.exports = {
-    "TIPO DE REGISTRO": {
+    "TIPODEREGISTRO": {
         "data": "2",
         "type": "9",
         "len": 1
@@ -29,7 +29,7 @@ module.exports = {
         "type": "X",
         "len": 200
     },
-    "CODIGOS DE ERRO": {
+    "CODIGOSDEERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -39,12 +39,12 @@ module.exports = {
         "type": "X",
         "len": 172
     },
-    "NÚMERO SEQÜENCIAL DETALHE": {
+    "NÚMEROSEQÜENCIALDETALHE": {
         "data": "",
         "type": "9",
         "len": 6
     },
-    "NÚMERO SEQÜENCIAL INFOADICIONAIS": {
+    "NÚMEROSEQÜENCIALINFOADICIONAIS": {
         "data": "",
         "type": "9",
         "len": 6

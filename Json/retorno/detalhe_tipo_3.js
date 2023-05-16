@@ -1,20 +1,20 @@
 module.exports = {
-    "TIPO DE REGISTRO": {
+    "TIPODEREGISTRO": {
         "data": "3",
         "type": "9",
         "len": 1
     },
-    "CHAVE Pix": {
+    "CHAVEPix": {
         "data": "",
         "type": "X",
         "len": 77
     },
-    "CÓD. DO MOVIMENTO": {
+    "CÓD.DOMOVIMENTO": {
         "data": "",
         "type": "9",
         "len": 2
     },
-    "DATA DO MOVIMENTO": {
+    "DATADOMOVIMENTO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
@@ -24,7 +24,7 @@ module.exports = {
         "type": "X",
         "len": 35
     },
-    "PIX LINK": {
+    "PIXLINK": {
         "data": "",
         "type": "X",
         "len": 500
@@ -39,7 +39,7 @@ module.exports = {
         "type": "X",
         "len": 44
     },
-    "NÚMERO SEQÜENCIAL": {
+    "NÚMEROSEQÜENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

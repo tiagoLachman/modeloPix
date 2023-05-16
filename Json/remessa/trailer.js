@@ -1,5 +1,5 @@
 module.exports = {
-    "TIPO DE REGISTRO": {
+    "TIPODEREGISTRO": {
         "data": "9",
         "type": "9",
         "len": 1
@@ -9,7 +9,7 @@ module.exports = {
         "type": "X",
         "len": 711
     },
-    "VALOR TOTAL": {
+    "VALORTOTAL": {
         "data": "",
         "type": "9V9",
         "len": {
@@ -17,15 +17,14 @@ module.exports = {
             "2": 2
         }
     },
-    "QTDE DE REGISTROS": {
+    "QTDEDEREGISTROS": {
         "data": "",
         "type": "9",
         "len": 15
     },
-    "NÚMERO SEQÜENCIAL": {
+    "NÚMEROSEQÜENCIAL": {
         "data": "",
         "type": "9",
         "len": 6
     }
-
 }
