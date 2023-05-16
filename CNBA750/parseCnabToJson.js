@@ -11,7 +11,7 @@ function parseToJson(data) {
     let resObj = header;
 
     for (let i = 0; i < objs.length; i++) {
-        if (tipo_registro == objs[i]["TIPO DE REGISTRO"].data) {
+        if (tipo_registro == objs[i]["TIPODEREGISTRO"].data) {
             resObj = objs[i];
             break;
         }
