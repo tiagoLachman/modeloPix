@@ -1,20 +1,20 @@
 module.exports = {
-    "TIPODEREGISTRO": {
+    "TIPO_DE_REGISTRO": {
         "data": "4",
         "type": "9",
         "len": 1
     },
-    "CHAVEPix": {
+    "CHAVE_Pix": {
         "data": "",
         "type": "X",
         "len": 77
     },
-    "COD.DOMOVIMENTO": {
+    "COD_DO_MOVIMENTO": {
         "data": "",
         "type": "9",
         "len": 2
     },
-    "DATADOMOVIMENTO": {
+    "DATA_DO_MOVIMENTO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
@@ -24,7 +24,7 @@ module.exports = {
         "type": "X",
         "len": 35
     },
-    "EMVDOQRCODE": {
+    "EMV_DO_QRCODE": {
         "data": "",
         "type": "X",
         "len": 500
@@ -39,7 +39,7 @@ module.exports = {
         "type": "X",
         "len": 44
     },
-    "NUMEROSEQUENCIAL": {
+    "NUMERO_SEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

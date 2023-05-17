@@ -1,99 +1,115 @@
 module.exports = {
-    "TIPODEREGISTRO": {
+    "TIPO_DE_REGISTRO": {
         "data": "1",
         "type": "9",
         "len": 1
     },
-    "ISPBPARTICIPANTE": {
-        "data": "",
+    "ISPB_PARTICIPANTE": {
+        "data": "AAAAAAAA",
         "type": "X",
         "len": 8
     },
-    "CODIGODEINSCRICAO": {
-        "data": "NOTA1",
+    "CODIGO_DE_INSCRICAO": {
+        "data": "11",
         "type": "9",
         "len": 2
     },
-    "CPFCNPJ": {
-        "data": "",
+    "CPF_CNPJ": {
+        "data": "22222222222222",
         "type": "9",
         "len": 14
     },
-    "AGÊNCIA": {
-        "data": "",
+    "AGENCIA": {
+        "data": "3333",
         "type": "9",
         "len": 4
     },
     "CONTA": {
-        "data": "",
+        "data": "44444444444444444444",
         "type": "9",
         "len": 20
     },
-    "TIPOCONTA": {
-        "data": "",
+    "TIPO_CONTA": {
+        "data": "BBBB",
         "type": "X",
         "len": 4
     },
-    "CHAVEPix": {
-        "data": "",
+    "CHAVE_Pix": {
+        "data": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
         "type": "X",
         "len": 77
     },
-    "TIPOCOBRANCA": {
-        "data": "",
+    "TIPO_COBRANCA": {
+        "data": "D",
         "type": "X",
         "len": 1
     },
-    "COD.DOMOVIMENTO": {
-        "data": "",
+    "COD_DO_MOVIMENTO": {
+        "data": "55",
         "type": "9",
         "len": 2
     },
-    "DATADOMOVIMENTO": {
-        "data": "AAAAMMDD",
+    "DATA_DO_MOVIMENTO": {
+        "data": "66666666",
         "type": "9",
         "len": 8
     },
     "IDENTIFICADOR": {
-        "data": "",
+        "data": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
         "type": "X",
         "len": 35
     },
     "EXPIRACAO": {
-        "data": "",
+        "data": "777777777777777",
         "type": "9",
         "len": 15
     },
-    "DATADEVENCIMENTO": {
-        "data": "AAAAMMDD",
+    "DATA_DE_VENCIMENTO": {
+        "data": "88888888",
         "type": "9",
         "len": 8
     },
-    "VALORORIGINAL": {
-        "data": "123456789123456,32",
+    "VALOR_ORIGINAL": {
+        "data": "123456789123456,11",
         "type": "9V9",
         "len": {
             "1": 15,
             "2": 2
         }
     },
-    "VALORJUROS": {
-        "data": "123456789123456,32",
+    "VALOR_JUROS": {
+        "data": "123456789123456,22",
         "type": "9V9",
         "len": {
             "1": 15,
             "2": 2
         }
     },
-    "VALORMULTA": {
-        "data": "123456789123456,32",
+    "VALOR_MULTA": {
+        "data": "123456789123456,33",
         "type": "9V9",
         "len": {
             "1": 15,
             "2": 2
         }
     },
-    "VALORDESCONTO/ABATIMENTO": {
+    "VALOR_DESCONTO_OU_ABATIMENTO": {
+        "data": "123456789,456",
+        "type": "9V9",
+        "len": {
+            "1": 15,
+            "2": 2
+        }
+    },
+    "VALOR_FINAL": {
+        "data": "123456789,789",
+        "type": "9V9",
+        "len": {
+            "1": 15,
+            "2": 2
+        }
+    },
+    "VALOR_PAGO": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -101,7 +117,7 @@ module.exports = {
             "2": 2
         }
     },
-    "VALORFINAL": {
+    "TARIFA_DE_COBRANCA": {
         "data": "1231123456,2524",
         "type": "9V9",
         "len": {
@@ -109,63 +125,47 @@ module.exports = {
             "2": 2
         }
     },
-    "VALORPAGO": {
-        "data": "1231123456,2524",
-        "type": "9V9",
-        "len": {
-            "1": 15,
-            "2": 2
-        }
-    },
-    "TARIFADECOBRANCA": {
-        "data": "1231123456,2524",
-        "type": "9V9",
-        "len": {
-            "1": 15,
-            "2": 2
-        }
-    },
-    "CODIGODEINSCRICAODEVEDOR": {
-        "data": "",
+    "CODIGO_DE_INSCRICAO_DEVEDOR": {
+        "data": "99",
         "type": "9",
         "len": 2
     },
-    "CPFCNPJDEVEDOR": {
-        "data": "",
+    "CPF_CNPJ_DEVEDOR": {
+        "data": "00000000000000",
         "type": "9",
         "len": 14
     },
-    "MENSAGEMPAGADORFINAL": {
+    "MENSAGEM_PAGADOR_FINAL": {
         "data": "",
         "type": "X",
         "len": 140
     },
-    "CODIGODEINSCRICAOPAGADORFINAL": {
+    "CODIGO_DE_INSCRICAO_PAGADOR_FINAL": {
         "data": "",
         "type": "9",
         "len": 2
     },
-    "CPFCNPJPAGADORFINAL": {
+    "CPF_CNPJ_PAGADOR_FINAL": {
         "data": "",
         "type": "9",
         "len": 14
     },
-    "NOMEPAGADORFINAL": {
+    "NOME_PAGADOR_FINAL": {
         "data": "",
         "type": "X",
         "len": 140
     },
-    "COD.DELIQUIDACAO": {
+    "COD_DE_LIQUIDACAO": {
         "data": "",
         "type": "X",
         "len": 2
     },
-    "ENDTOENDID": {
+    "END_TO_END_ID": {
         "data": "",
         "type": "X",
         "len": 35
     },
-    "CODIGOSDEERRO": {
+    "CODIGOS_DE_ERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -175,7 +175,7 @@ module.exports = {
         "type": "X",
         "len": 47
     },
-    "NUMEROSEQUENCIAL": {
+    "NUMERO_SEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

@@ -1,15 +1,15 @@
 module.exports = {
-    "TIPODEREGISTRO": {
+    "TIPO_DE_REGISTRO": {
         "data": "9",
         "type": "9",
         "len": 1
     },
-    "CODIGODERETORNO": {
+    "CODIGO_DE_RETORNO": {
         "data": "2",
         "type": "9",
         "len": 1
     },
-    "CODIGODESERVICO": {
+    "CODIGO_DE_SERVICO": {
         "data": "",
         "type": "9",
         "len": 2
@@ -19,7 +19,7 @@ module.exports = {
         "type": "X",
         "len": 8
     },
-    "CODIGOSDEERRO": {
+    "CODIGOS_DE_ERRO": {
         "data": "NOTA23",
         "type": "X",
         "len": 30
@@ -29,12 +29,12 @@ module.exports = {
         "type": "X",
         "len": 687
     },
-    "QTDEDEDETALHES": {
+    "QTDE_DE_DETALHES": {
         "data": "",
         "type": "9",
         "len": 15
     },
-    "NÚMEROSEQUENCIAL": {
+    "NUMERO_SEQUENCIAL": {
         "data": "",
         "type": "9",
         "len": 6

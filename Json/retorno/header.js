@@ -1,45 +1,45 @@
 module.exports = {
-    "TIPODEREGISTRO": {
+    "TIPO_DE_REGISTRO": {
         "data": "0",
         "type": "9",
         "len": 1
     },
-    "CODIGODERETORNO": {
+    "CODIGO_DE_RETORNO": {
         "data": "2",
         "type": "9",
         "len": 1
     },
-    "LITERALDERETORNO": {
+    "LITERAL_DE_RETORNO": {
         "data": "RETORNO",
         "type": "X",
         "len": 7
     },
-    "CODIGODOSERVICO": {
+    "CODIGO_DO_SERVICO": {
         "data": "02",
         "type": "9",
         "len": 2
     },
-    "LITERALDESERVICO": {
+    "LITERAL_DE_SERVICO": {
         "data": "PIX",
         "type": "X",
         "len": 15
     },
-    "ISPBPARTICIPANTE": {
+    "ISPB_PARTICIPANTE": {
         "data": "DeveserpreenchidocomISPBdoPSPRecebedor",
         "type": "X",
         "len": 8
     },
-    "CODIGODEINSCRICAO": {
+    "CODIGO_DE_INSCRICAO": {
         "data": "NOTA1",
         "type": "9",
         "len": 2
     },
-    "CPFCNPJ": {
+    "CPF_CNPJ": {
         "data": "Identificaçãoúnicadousuáriorecebedor",
         "type": "9",
         "len": 14
     },
-    "AGÊNCIA": {
+    "AGENCIA": {
         "data": "Agênciadousuáriorecebedor",
         "type": "9",
         "len": 4
@@ -49,32 +49,32 @@ module.exports = {
         "type": "9",
         "len": 20
     },
-    "TIPOCONTA": {
+    "TIPO_CONTA": {
         "data": "NOTA2",
         "type": "X",
         "len": 4
     },
-    "CHAVEPix": {
+    "CHAVE_Pix": {
         "data": "NOTA3",
         "type": "X",
         "len": 77
     },
-    "DATADEGERACAO": {
+    "DATA_DE_GERACAO": {
         "data": "AAAAMMDD",
         "type": "9",
         "len": 8
     },
-    "CODIGODOCONVENIO": {
+    "CODIGO_DO_CONVENIO": {
         "data": "",
         "type": "X",
         "len": 30
     },
-    "EXCLUSIVOPSPRECEBEDOR": {
+    "EXCLUSIVO_PSP_RECEBEDOR": {
         "data": "",
         "type": "X",
         "len": 60
     },
-    "CODIGOSDEERRO": {
+    "CODIGOS_DE_ERRO": {
         "data": "",
         "type": "X",
         "len": 30
@@ -84,12 +84,12 @@ module.exports = {
         "type": "X",
         "len": 458
     },
-    "VERSAODOARQUIVO": {
+    "VERSAO_DO_ARQUIVO": {
         "data": "",
         "type": "9",
         "len": 3
     },
-    "NUMEROSEQUENCIAL": {
+    "NUMERO_SEQUENCIAL": {
         "data": "000001",
         "type": "9",
         "len": 6
