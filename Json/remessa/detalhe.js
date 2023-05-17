@@ -65,7 +65,7 @@ module.exports = {
         "len": 1
     },
     "VALOR_ORIGINAL": {
-        "data": "123456789123456,32",
+        "data": "11,6932",
         "type": "9V9",
         "len": {
             "1": 15,
@@ -73,7 +73,7 @@ module.exports = {
         }
     },
     "VALOR_JUROS": {
-        "data": "123456789123456,32",
+        "data": "111111111111111,32",
         "type": "9V9",
         "len": {
             "1": 15,
@@ -81,7 +81,7 @@ module.exports = {
         }
     },
     "VALOR_MULTA": {
-        "data": "123456789123456,32",
+        "data": "111111111111111,32",
         "type": "9V9",
         "len": {
             "1": 15,
