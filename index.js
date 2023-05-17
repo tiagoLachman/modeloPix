@@ -1,5 +1,8 @@
+const fs = require('fs');
+
 const parseToJson = require("./CNBA750/parseCnabToJson")
 const generateCNAB750 = require("./CNBA750/generator")
+
 
 //Dados em json
 let header = require("./Json/remessa/header");
@@ -7,11 +10,16 @@ let detalhe = require("./Json/remessa/detalhe");
 let detalhe_2 = require("./Json/remessa/detalhe_tipo_2");
 let trailer = require("./Json/remessa/trailer");
 
+
+/*Incluir dados*/
+
+
+
 let obj_array = [header, detalhe, detalhe_2, trailer];
 let txt_generated = generateCNAB750(obj_array);
 console.log(txt_generated);
 console.log(txt_generated.length);
-
+fs.writeFileSync('txt_output.txt', txt_generated);
 
 /*
 let ret = generateLine(header);
@@ -54,6 +62,6 @@ let total_esperado = 0;
 //let objSomar = parseToJson("92021234----1234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234---123456789012345012345");
 
 
-const fs = require('fs');
-let data = fs.readFileSync('./txtcompleto.txt', { encoding: 'utf8', flag: 'r' });
+
+let data = fs.readFileSync('./CNBA750_example.txt', { encoding: 'utf8', flag: 'r' });
 //console.log(parseToJson(data));
