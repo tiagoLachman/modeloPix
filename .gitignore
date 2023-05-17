@@ -1,5 +1,5 @@
 *.json
-
+txt_output.*
 # Logs
 logs
 *.log
