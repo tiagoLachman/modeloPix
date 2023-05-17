@@ -1,10 +1,9 @@
 //Geração de cada campo
 function generateField(jsonData) {
     let len = jsonData.len;
-    let data = jsonData.data;
-    if(data == "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"){
-        console.log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB")
-    }
+
+    //Retirar todos os caracteres especiais
+    let data = jsonData.data.replace(/[^\w\s]/gi, '');
     /*
         Caso o valor atribuido seja maior do que
         o maximo permitido no CNAB750
@@ -22,7 +21,7 @@ function generateField(jsonData) {
     
     //Veficação do tipo do campo
     if (type == "9") {
-
+        
         //Completando o campo com o respectivo caractere
         for (let i = 0; i < (len - data.length); i++) {
             string = string.concat("0");
@@ -67,17 +66,16 @@ function generateField(jsonData) {
 function generateLine(data) {
     
     let res = "";
-    console.log("NOVO OBJETO");
     Object.keys(data).forEach(k => {
-        console.log(k)
         let campoGerado = generateField(data[k]);
+        /*
         console.log(`campoGerado.length${campoGerado.length}\ndata[k].len:${data[k].len}\n-------------------\n`)
         if(typeof(data[k].len) == "number"){
             if(campoGerado.length != data[k].len) throw `${JSON.stringify(data[k])}\n${campoGerado}`
         }else{
             if(campoGerado.length != (data[k].len["1"]+data[k].len["2"])) throw `${JSON.stringify(data[k])}\n${campoGerado}`
         }
-        
+        */
         //Concatenando cada campo gerado
         res = res.concat(campoGerado);
     })
