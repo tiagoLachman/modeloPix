@@ -29,7 +29,7 @@ module.exports = {
         "type": "X",
         "len": 4
     },
-    "CHAVE_Pix": {
+    "CHAVE_PIX": {
         "data": "",
         "type": "X",
         "len": 77

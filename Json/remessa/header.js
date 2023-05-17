@@ -54,7 +54,7 @@ module.exports = {
         "type": "X",
         "len": 4
     },
-    "CHAVE_Pix": {
+    "CHAVE_PIX": {
         "data": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
         "type": "X",
         "len": 77
@@ -75,6 +75,7 @@ module.exports = {
         "len": 60
     },
     "BRANCOS": {
+        
         "data": "",
         "type": "X",
         "len": 488

@@ -34,7 +34,7 @@ module.exports = {
         "type": "X",
         "len": 4
     },
-    "CHAVE_Pix": {
+    "CHAVE_PIX": {
         "data": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
         "type": "X",
         "len": 77
