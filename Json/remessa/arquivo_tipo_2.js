@@ -1,52 +1,37 @@
 module.exports={
 /**
     * Significado:
-    * `IDENTIFICAÇÃO DO REGISTRO TRAILER`
+    * `IDENTIFICAÇÃO DO REGISTRO TRANSAÇÃO`
     * 
     * Obrigatório:
     * `SIM`
     * 
     * Valor padrão:
-    * `9`
+    * `2`
     */
     "TIPO_DE_REGISTRO": {
-         "data": "9",
-         "type": "9",
-         "len": 01
-    },
-/**
-    * Significado:
-    * `IDENTIFICAÇÃO DE ARQUIVO RETORNO`
-    * 
-    * Obrigatório:
-    * `SIM`
-    * 
-    * Valor padrão:
-    * `2`
-    */
-    "CODIGO_DE_RETORNO": {
          "data": "2",
          "type": "9",
          "len": 01
     },
 /**
     * Significado:
-    * `IDENTIFICAÇÃO DO TIPO DE SERVIÇO`
+    * `TRANSACTION ID (TXID)`
     * 
     * Obrigatório:
-    * `SIM`
+    * `NÃO`
     * 
     * Valor padrão:
-    * `2`
+    * `NOTA 10`
     */
-    "CODIGO_DE_SERVICO": {
-         "data": "2",
-         "type": "9",
-         "len": 02
+    "IDENTIFICADOR": {
+         "data": "NOTA 10",
+         "type": "X",
+         "len": 35
     },
 /**
     * Significado:
-    * `ISPB`
+    * `NOME DO CAMPO`
     * 
     * Obrigatório:
     * `SIM`
@@ -54,23 +39,68 @@ module.exports={
     * Valor padrão:
     * ``
     */
-    "ISPB": {
+    "NOME": {
          "data": "",
          "type": "X",
-         "len": 08
+         "len": 50
     },
 /**
     * Significado:
-    * `CÓDIGOS DE ERRO`
+    * `CONTEÚDO DO CAMPO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * ``
+    */
+    "VALOR": {
+         "data": "",
+         "type": "X",
+         "len": 200
+    },
+/**
+    * Significado:
+    * `NOME DO CAMPO`
     * 
     * Obrigatório:
     * `NÃO`
     * 
     * Valor padrão:
-    * `NOTA 23`
+    * ``
+    */
+    "NOME_1": {
+         "data": "",
+         "type": "X",
+         "len": 50
+    },
+/**
+    * Significado:
+    * `CONTEÚDO DO CAMPO`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * ``
+    */
+    "VALOR_1": {
+         "data": "",
+         "type": "X",
+         "len": 200
+    },
+/**
+    * Significado:
+    * `CODIGOS DE ERRO DOS COMANDOS REJEITADOS`
+    * 
+    * Obrigatório:
+    * `NAO`
+    * 
+    * Valor padrão:
+    * `NOTA (23)`
     */
     "CODIGOS_DE_ERRO": {
-         "data": "NOTA 23",
+         "data": "NOTA (23)",
          "type": "X",
          "len": 30
     },
@@ -87,11 +117,11 @@ module.exports={
     "BRANCOS": {
          "data": "",
          "type": "X",
-         "len": 687
+         "len": 172
     },
 /**
     * Significado:
-    * `QUANTIDADE DE REGISTROS DE TRANSAÇÃO`
+    * `No. SEQUENCIAL DO REGISTRO DETALHE (1) DO ARQUIVO`
     * 
     * Obrigatório:
     * `SIM`
@@ -99,14 +129,14 @@ module.exports={
     * Valor padrão:
     * ``
     */
-    "QTDE_DE_DETALHES": {
+    "NUMERO SEQUENCIAL_DETALHE": {
          "data": "",
          "type": "9",
-         "len": 15
+         "len": 06
     },
 /**
     * Significado:
-    * `NÚMERO SEQÜENCIAL DO REGISTRO NO ARQUIVO`
+    * `No. SEQUENCIAL DO REGISTRO INFORMAÇÕES ADICIONAIS (2) DO ARQUIVO`
     * 
     * Obrigatório:
     * `SIM`
@@ -114,7 +144,7 @@ module.exports={
     * Valor padrão:
     * ``
     */
-    "NUMERO_SEQUENCIAL": {
+    "NUMERO_SEQUENCIAL_INFOADICIONAIS": {
          "data": "",
          "type": "9",
          "len": 06

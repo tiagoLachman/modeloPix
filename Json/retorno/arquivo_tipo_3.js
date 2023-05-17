@@ -1,52 +1,22 @@
 module.exports={
 /**
     * Significado:
-    * `IDENTIFICAÇÃO DO REGISTRO TRAILER`
+    * `IDENTIFICAÇÃO DO REGISTRO TRANSAÇÃO`
     * 
     * Obrigatório:
     * `SIM`
     * 
     * Valor padrão:
-    * `9`
+    * `3`
     */
     "TIPO_DE_REGISTRO": {
-         "data": "9",
+         "data": "3",
          "type": "9",
          "len": 01
     },
 /**
     * Significado:
-    * `IDENTIFICAÇÃO DE ARQUIVO RETORNO`
-    * 
-    * Obrigatório:
-    * `SIM`
-    * 
-    * Valor padrão:
-    * `2`
-    */
-    "CODIGO_DE_RETORNO": {
-         "data": "2",
-         "type": "9",
-         "len": 01
-    },
-/**
-    * Significado:
-    * `IDENTIFICAÇÃO DO TIPO DE SERVIÇO`
-    * 
-    * Obrigatório:
-    * `SIM`
-    * 
-    * Valor padrão:
-    * `2`
-    */
-    "CODIGO_DE_SERVICO": {
-         "data": "2",
-         "type": "9",
-         "len": 02
-    },
-/**
-    * Significado:
-    * `ISPB`
+    * `CHAVE Pix`
     * 
     * Obrigatório:
     * `SIM`
@@ -54,25 +24,86 @@ module.exports={
     * Valor padrão:
     * ``
     */
-    "ISPB": {
+    "CHAVE_Pix": {
          "data": "",
          "type": "X",
+         "len": 77
+    },
+/**
+    * Significado:
+    * `IDENTIFICAÇÃO DO MOVIMENTO RETORNADO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `NOTA 3`
+    */
+    "COD__DO_MOVIMENTO": {
+         "data": "NOTA 3",
+         "type": "9",
+         "len": 02
+    },
+/**
+    * Significado:
+    * `DATA DO MOVIMENTO RETORNADO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `AAAAMMDD`
+    */
+    "DATA_DO_MOVIMENTO": {
+         "data": "AAAAMMDD",
+         "type": "9",
          "len": 08
     },
 /**
     * Significado:
-    * `CÓDIGOS DE ERRO`
+    * `TRANSACTION ID (TXID)`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `NOTA 10`
+    */
+    "IDENTIFICADOR": {
+         "data": "NOTA 10",
+         "type": "X",
+         "len": 35
+    },
+/**
+    * Significado:
+    * `PIX LINK`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `NOTA 7`
+    */
+    "PIX_LINK": {
+         "data": "NOTA 7",
+         "type": "X",
+         "len": 500
+    },
+/**
+    * Significado:
+    * `LINK PARA PAYLOAD JSON (URL)`
     * 
     * Obrigatório:
     * `NÃO`
     * 
     * Valor padrão:
-    * `NOTA 23`
+    * `URL PRESENTE NO EMV DO QR CODE DINAMICO E QUE CONTÉM OS
+DADOS DA COBRANÇA`
     */
-    "CODIGOS_DE_ERRO": {
-         "data": "NOTA 23",
+    "LOCATION": {
+         "data": "URL PRESENTE NO EMV DO QR CODE DINAMICO E QUE CONTÉM OS DADOS DA COBRANÇA",
          "type": "X",
-         "len": 30
+         "len": 77
     },
 /**
     * Significado:
@@ -87,22 +118,7 @@ module.exports={
     "BRANCOS": {
          "data": "",
          "type": "X",
-         "len": 687
-    },
-/**
-    * Significado:
-    * `QUANTIDADE DE REGISTROS DE TRANSAÇÃO`
-    * 
-    * Obrigatório:
-    * `SIM`
-    * 
-    * Valor padrão:
-    * ``
-    */
-    "QTDE_DE_DETALHES": {
-         "data": "",
-         "type": "9",
-         "len": 15
+         "len": 44
     },
 /**
     * Significado:

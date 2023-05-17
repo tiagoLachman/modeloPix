@@ -1,97 +1,289 @@
-module.exports = {
+module.exports={
+/**
+    * Significado:
+    * `IDENTIFICAÇÃO DO REGISTRO HEADER`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `0`
+    */
     "TIPO_DE_REGISTRO": {
-        "data": "0",
-        "type": "9",
-        "len": 1
+         "data": "0",
+         "type": "9",
+         "len": 01
     },
+/**
+    * Significado:
+    * `IDENTIFICAÇÃO DO ARQUIVO RETORNO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `2`
+    */
     "CODIGO_DE_RETORNO": {
-        "data": "2",
-        "type": "9",
-        "len": 1
+         "data": "2",
+         "type": "9",
+         "len": 01
     },
+/**
+    * Significado:
+    * `IDENTIFICAÇÃO. POR EXTENSO DO TIPO DE MOVIMENTO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `RETORNO`
+    */
     "LITERAL_DE_RETORNO": {
-        "data": "RETORNO",
-        "type": "X",
-        "len": 7
+         "data": "RETORNO",
+         "type": "X",
+         "len": 07
     },
+/**
+    * Significado:
+    * `IDENTIFICAÇÃO DO TIPO DE SERVIÇO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `2`
+    */
     "CODIGO_DO_SERVICO": {
-        "data": "02",
-        "type": "9",
-        "len": 2
+         "data": "2",
+         "type": "9",
+         "len": 02
     },
+/**
+    * Significado:
+    * `IDENTIFICAÇÃO POR EXTENSO DO TIPO DE SERVIÇO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `PIX`
+    */
     "LITERAL_DE_SERVICO": {
-        "data": "PIX",
-        "type": "X",
-        "len": 15
+         "data": "PIX",
+         "type": "X",
+         "len": 15
     },
+/**
+    * Significado:
+    * `PSP DO USUARIO RECEBEDOR`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `Deve ser preenchido com ISPB do PSP`
+    */
     "ISPB_PARTICIPANTE": {
-        "data": "DeveserpreenchidocomISPBdoPSPRecebedor",
-        "type": "X",
-        "len": 8
+         "data": "Deve ser preenchido com ISPB do PSP",
+         "type": "X",
+         "len": 08
     },
+/**
+    * Significado:
+    * `TIPO DE INSCRIÇÃO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `NOTA 1`
+    */
     "CODIGO_DE_INSCRICAO": {
-        "data": "NOTA1",
-        "type": "9",
-        "len": 2
+         "data": "NOTA 1",
+         "type": "9",
+         "len": 02
     },
+/**
+    * Significado:
+    * `CPF CNPJ DO USUARIO RECEBEDOR`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `Identificação única do usuário recebedor`
+    */
     "CPF_CNPJ": {
-        "data": "Identificaçãoúnicadousuáriorecebedor",
-        "type": "9",
-        "len": 14
+         "data": "Identificação única do usuário recebedor",
+         "type": "9",
+         "len": 14
     },
+/**
+    * Significado:
+    * `AGÊNCIA DO USUARIO RECEBEDOR`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * `Agência do usuário recebedor.`
+    */
     "AGENCIA": {
-        "data": "Agênciadousuáriorecebedor",
-        "type": "9",
-        "len": 4
+         "data": "Agência do usuário recebedor.",
+         "type": "9",
+         "len": 04
     },
+/**
+    * Significado:
+    * `CONTA USUÁRIO RECEBEDOR`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * `Número da conta transacional usuário recebedor`
+    */
     "CONTA": {
-        "data": "Númerodacontatransacional",
-        "type": "9",
-        "len": 20
+         "data": "Número da conta transacional usuário recebedor",
+         "type": "9",
+         "len": 20
     },
+/**
+    * Significado:
+    * `TIPO CONTA USUÁRIO RECEBEDOR`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * `NOTA 2`
+    */
     "TIPO_CONTA": {
-        "data": "NOTA2",
-        "type": "X",
-        "len": 4
+         "data": "NOTA 2",
+         "type": "X",
+         "len": 04
     },
-    "CHAVE_PIX": {
-        "data": "NOTA3",
-        "type": "X",
-        "len": 77
+/**
+    * Significado:
+    * `CHAVE Pix`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * `NOTA 3`
+    */
+    "CHAVE_Pix": {
+         "data": "NOTA 3",
+         "type": "X",
+         "len": 77
     },
+/**
+    * Significado:
+    * `DATA DE GERAÇÃO DO ARQUIVO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `AAAAMMDD`
+    */
     "DATA_DE_GERACAO": {
-        "data": "AAAAMMDD",
-        "type": "9",
-        "len": 8
+         "data": "AAAAMMDD",
+         "type": "9",
+         "len": 08
     },
+/**
+    * Significado:
+    * `CÓDIGO DO CONVENIO`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * ``
+    */
     "CODIGO_DO_CONVENIO": {
-        "data": "",
-        "type": "X",
-        "len": 30
+         "data": "",
+         "type": "X",
+         "len": 30
     },
+/**
+    * Significado:
+    * `EXCLUSIVO PSP RECEBEDOR`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * `Campo para uso exclusivo do PSP recebedor`
+    */
     "EXCLUSIVO_PSP_RECEBEDOR": {
-        "data": "",
-        "type": "X",
-        "len": 60
+         "data": "Campo para uso exclusivo do PSP recebedor",
+         "type": "X",
+         "len": 60
     },
+/**
+    * Significado:
+    * `CÓDIGOS DE ERRO`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * `NOTA 23`
+    */
     "CODIGOS_DE_ERRO": {
-        "data": "",
-        "type": "X",
-        "len": 30
+         "data": "NOTA 23",
+         "type": "X",
+         "len": 30
     },
+/**
+    * Significado:
+    * `COMPLEMENTO DO REGISTRO`
+    * 
+    * Obrigatório:
+    * `NÃO`
+    * 
+    * Valor padrão:
+    * ``
+    */
     "BRANCOS": {
-        "data": "",
-        "type": "X",
-        "len": 458
+         "data": "",
+         "type": "X",
+         "len": 458
     },
+/**
+    * Significado:
+    * `VERSAO DO LAYOUT DO ARQUIVO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `1
+CONTEÚDO PODE SER ALTERADO DE ACORDO
+COM VERSÃO DO LAYOUT`
+    */
     "VERSAO_DO_ARQUIVO": {
-        "data": "",
-        "type": "9",
-        "len": 3
+         "data": "1 CONTEÚDO PODE SER ALTERADO DE ACORDO COM VERSÃO DO LAYOUT",
+         "type": "9",
+         "len": 3
     },
-    "NUMERO_SEQUENCIAL": {
-        "data": "000001",
-        "type": "9",
-        "len": 6
-    }
+/**
+    * Significado:
+    * `NÚMERO SEQÜENCIAL DO ARQUIVO`
+    * 
+    * Obrigatório:
+    * `SIM`
+    * 
+    * Valor padrão:
+    * `1`
+    */
+    "NUMERO SEQUENCIAL_DO_ARQUIVO": {
+         "data": "1",
+         "type": "9",
+         "len": 06
+    },
 }

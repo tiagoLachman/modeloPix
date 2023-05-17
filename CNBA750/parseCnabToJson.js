@@ -1,14 +1,15 @@
 const header = require("../Json/retorno/header");
 const detalhe = require("../Json/retorno/detalhe");
-const detalhe_3 = require("../Json/retorno/detalhe_tipo_3");
-const detalhe_4 = require("../Json/retorno/detalhe_tipo_4");
+const arquivo_2 = require("../Json/retorno/arquivo_tipo_2");
+const arquivo_3 = require("../Json/retorno/arquivo_tipo_3");
+const arquivo_4 = require("../Json/retorno/arquivo_tipo_4");
 const trailer = require("../Json/retorno/trailer");
 
 //Passa uma linha do CNAB750 para JSON
 function parseOneLineToJson(data) {
 
     //Tipos de registros
-    let objs = [header, detalhe, detalhe_3, detalhe_4, trailer];
+    let objs = [header, detalhe, arquivo_2, arquivo_3, arquivo_4, trailer];
 
     //Pega o tipo do registro no primeiro byte
     let tipo_registro = data[0];
