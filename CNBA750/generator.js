@@ -19,10 +19,11 @@ function generateData(jsonData) {
         }
         data = data.concat(string);
     } else if (type == "9V9") {
+        if(data == "") return "00000000000000000"
         data = parseFloat(data.replace(",", "."));
         let decimais = (data - data.toFixed(0)).toPrecision(len["2"]).substring(len["2"]);
         data = data.toFixed(0).toString()
-        for (let i = 0; i < (len["1"] - data.length-decimais.length+2); i++) {
+        for (let i = 0; i < (len["1"] - data.length - decimais.length + 2); i++) {
             string = string.concat("0");
         }
         data = string.concat(`${data}${decimais}`);
@@ -39,4 +40,12 @@ function generateLine(data) {
     return res;
 }
 
-module.exports = generateLine
+function generateCNAB750(obj_array) {
+    let res="";
+    obj_array.forEach(obj => {
+        res = res.concat(`${generateLine(obj)}\n`);
+    });
+    return res;
+}
+
+module.exports = generateCNAB750
