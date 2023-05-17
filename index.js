@@ -1,13 +1,18 @@
 const parseToJson = require("./CNBA750/parseCnabToJson")
-const generateLine = require("./CNBA750/generator")
-
-
+const generateCNAB750 = require("./CNBA750/generator")
 
 //Dados em json
 let header = require("./Json/remessa/header");
 let detalhe = require("./Json/remessa/detalhe");
 let detalhe_2 = require("./Json/remessa/detalhe_tipo_2");
 let trailer = require("./Json/remessa/trailer");
+
+let obj_array = [header, detalhe, detalhe_2, trailer];
+let txt_generated = generateCNAB750(obj_array);
+console.log(txt_generated);
+console.log(txt_generated.length);
+
+
 /*
 let ret = generateLine(header);
 console.log(ret);
@@ -48,38 +53,7 @@ let total_esperado = 0;
 //Teste Trailer
 //let objSomar = parseToJson("92021234----1234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234----x01234---123456789012345012345");
 
-/*
-let asd = "asd\nasd2\nasd3";
-let ret = asd.split("\n")
-*/
 
 const fs = require('fs');
 let data = fs.readFileSync('./txtcompleto.txt', { encoding: 'utf8', flag: 'r' });
-data = data.split("\r\n")
-/*
-for (let i = 0; i < data.length; i++) {
-    const element = data[i];
-    console.log(element.length)
-}
-*/
-for (let i = 0; i < data.length; i++) {
-    if(data[i] == "") break;
-    const objSomar = parseToJson(data[i]);
-
-    console.log(objSomar)
-    Object.keys(objSomar).forEach(k => {
-        total_esperado = 0;
-        if (typeof (objSomar[k].len) != "number") {
-            total_esperado += objSomar[k].len["1"]
-            total_esperado += objSomar[k].len["2"]
-            total = objSomar[k].data.length - 1;
-        } else {
-            total_esperado += objSomar[k].len;
-            total = objSomar[k].data.length;
-        }
-        if (total != total_esperado) {
-            let err = `Chave:${k}\nData:${objSomar[k].data}\nEsperado:${total_esperado}\nEncontrado:${total}`
-            throw err;
-        }
-    })
-}
+//console.log(parseToJson(data));
