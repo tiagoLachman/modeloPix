@@ -16,6 +16,11 @@ let trailer = require("./Json/remessa/trailer");
 /*Adicionar dados para geração do CNAB750*/
 
 
+
+
+
+
+
 let obj_array = [header, detalhe, detalhe_2, trailer];
 let txt_generated = generateCNAB750(obj_array);
 fs.writeFileSync('txt_output.txt', txt_generated);

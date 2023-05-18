@@ -1,7 +1,7 @@
 module.exports = {
     /**
         * Significado:
-        * ``
+        * `IDENTIFICAÇÃO DO REGISTRO TRAILER`
         * 
         * Obrigatório:
         * `SIM`
@@ -16,7 +16,7 @@ module.exports = {
     },
     /**
         * Significado:
-        * ``
+        * `BRANCOS`
         * 
         * Obrigatório:
         * `NÃO`
@@ -31,14 +31,13 @@ module.exports = {
     },
     /**
         * Significado:
-        * ``
+        * `VALOR TOTAL DOS REGISTROS`
         * 
         * Obrigatório:
         * `SIM`
         * 
         * Valor padrão:
-        * `SOMATÓRIA DO CAMPO VALOR ORIGINAL DO
-    DETALHE`
+        * `SOMATÓRIA DO CAMPO VALOR ORIGINAL DO DETALHE`
         */
     "VALOR_TOTAL": {
         "data": "SOMATÓRIA DO CAMPO VALOR ORIGINAL DO DETALHE",
@@ -50,14 +49,13 @@ module.exports = {
     },
     /**
         * Significado:
-        * ``
+        * `QUANTIDADE DE REGISTROS DE TRANSAÇÃO`
         * 
         * Obrigatório:
         * `SIM`
         * 
         * Valor padrão:
-        * `SOMATÓRIA DA QUANTIDADE DE
-    REGISTROS DO ARQUIVO`
+        * `SOMATÓRIA DA QUANTIDADE DE REGISTROS DO ARQUIVO`
         */
     "QTDE_DE_REGISTROS": {
         "data": "SOMATÓRIA DA QUANTIDADE DE REGISTROS DO ARQUIVO",
@@ -66,7 +64,7 @@ module.exports = {
     },
     /**
         * Significado:
-        * ``
+        * `NÚMERO SEQÜENCIAL DO REGISTRO NO ARQUIVO`
         * 
         * Obrigatório:
         * `SIM`

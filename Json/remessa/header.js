@@ -142,8 +142,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `Número da conta transacional usuário
-    recebedor`
+        * `Número da conta transacional usuário recebedor`
         */
     "CONTA": {
         "data": "Número da conta transacional usuário recebedor",
@@ -248,9 +247,7 @@ module.exports = {
         * `SIM`
         * 
         * Valor padrão:
-        * `1
-    CONTEÚDO PODE SER ALTERADO DE ACORDO COM VERSÃO DO
-    LAYOUT`
+        * `1 CONTEÚDO PODE SER ALTERADO DE ACORDO COM VERSÃO DO LAYOUT`
         */
     "VERSAO_DO_ARQUIVO": {
         "data": "1 CONTEÚDO PODE SER ALTERADO DE ACORDO COM VERSÃO DO LAYOUT",

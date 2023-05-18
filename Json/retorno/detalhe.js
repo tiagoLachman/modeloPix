@@ -82,8 +82,7 @@ module.exports = {
         * `SIM`
         * 
         * Valor padrão:
-        * `Número da conta transacional usuário
-    recebedor`
+        * `Número da conta transacional usuário recebedor`
         */
     "CONTA": {
         "data": "Número da conta transacional usuário recebedor",
@@ -188,11 +187,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `DEFAULT 86400 (24
-    horas)
-    Tempo de vida da cobrança,
-    especificado em segundos a partir da data de criação
-    NOTA 11`
+        * `DEFAULT 86400 (24 horas) Tempo de vida da cobrança, especificado em segundos a partir da data de criação NOTA 11`
         */
     "EXPIRACAO": {
         "data": "DEFAULT 86400 (24 horas) Tempo de vida da cobrança, especificado em segundos a partir da data de criação NOTA 11",
@@ -222,8 +217,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `VALOR OBRIGATÓRIO APENAS PARA QR CODE DINÃMICO
-    NOTA 13`
+        * `VALOR OBRIGATÓRIO APENAS PARA QR CODE DINÃMICO NOTA 13`
         */
     "VALOR_ORIGINAL": {
         "data": "VALOR OBRIGATÓRIO APENAS PARA QR CODE DINÃMICO NOTA 13",
@@ -454,8 +448,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `Esse campo transita nas mensagens de recebimento dos QR Codes e transferências. Pode ser utilizado e outras
-    consultas ou na devolução.`
+        * `Esse campo transita nas mensagens de recebimento dos QR Codes e transferências. Pode ser utilizado e outras consultas ou na devolução.`
         */
     "END_TO_END_ID": {
         "data": "Esse campo transita nas mensagens de recebimento dos QR Codes e transferências. Pode ser utilizado e outras consultas ou na devolução.",

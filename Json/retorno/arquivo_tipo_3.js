@@ -97,8 +97,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `URL PRESENTE NO EMV DO QR CODE DINAMICO E QUE CONTÉM OS
-    DADOS DA COBRANÇA`
+        * `URL PRESENTE NO EMV DO QR CODE DINAMICO E QUE CONTÉM OS DADOS DA COBRANÇA`
         */
     "LOCATION": {
         "data": "URL PRESENTE NO EMV DO QR CODE DINAMICO E QUE CONTÉM OS DADOS DA COBRANÇA",

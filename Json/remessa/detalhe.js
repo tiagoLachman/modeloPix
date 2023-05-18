@@ -67,8 +67,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `Número da conta
-    transacional usuário recebedor`
+        * `Número da conta transacional usuário recebedor`
         */
     "CONTA": {
         "data": "Número da conta transacional usuário recebedor",
@@ -158,10 +157,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `DEFAULT 86400 (24
-    horas)
-    Tempo de vida da cobrança,
-    especificado em segundos a partir da data de criação NOTA 11`
+        * `DEFAULT 86400 (24 horas) Tempo de vida da cobrança, especificado em segundos a partir da data de criação NOTA 11`
         */
     "EXPIRACAO": {
         "data": "DEFAULT 86400 (24 horas) Tempo de vida da cobrança, especificado em segundos a partir da data de criação NOTA 11",
@@ -206,8 +202,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `CAMPO OBRIGATÓRIO APENAS PARA GERAÇÃO DE QR CODE DINÂMICO
-    NOTA 14`
+        * `CAMPO OBRIGATÓRIO APENAS PARA GERAÇÃO DE QR CODE DINÂMICO NOTA 14`
         */
     "VALOR_ORIGINAL": {
         "data": "CAMPO OBRIGATÓRIO APENAS PARA GERAÇÃO DE QR CODE DINÂMICO NOTA 14",
@@ -354,9 +349,7 @@ module.exports = {
         * `NÃO`
         * 
         * Valor padrão:
-        * `S OU N
-    PERMITE MULTIPLOS PAGAMENTOS DO QR
-    CODE COM ALTERAÇÃO APENAS DO PAYLOAD`
+        * `S OU N PERMITE MULTIPLOS PAGAMENTOS DO QR CODE COM ALTERAÇÃO APENAS DO PAYLOAD`
         */
     "MULTIPLOS_PAGAMENTOS": {
         "data": "S OU N PERMITE MULTIPLOS PAGAMENTOS DO QR CODE COM ALTERAÇÃO APENAS DO PAYLOAD",

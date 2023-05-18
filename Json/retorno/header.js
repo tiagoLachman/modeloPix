@@ -262,9 +262,7 @@ module.exports = {
         * `SIM`
         * 
         * Valor padrão:
-        * `1
-    CONTEÚDO PODE SER ALTERADO DE ACORDO
-    COM VERSÃO DO LAYOUT`
+        * `1 CONTEÚDO PODE SER ALTERADO DE ACORDO COM VERSÃO DO LAYOUT`
         */
     "VERSAO_DO_ARQUIVO": {
         "data": "1 CONTEÚDO PODE SER ALTERADO DE ACORDO COM VERSÃO DO LAYOUT",

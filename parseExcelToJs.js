@@ -76,14 +76,14 @@ for (let i = 0; i < sheets.length; i++) {
     * \`${res["OBRIGATÓRIO"]}\`
     * 
     * Valor padrão:
-    * \`${res["CONTEÚDO"] === undefined ? "" : res["CONTEÚDO"]}\`
+    * \`${exceldata}\`
     */
     "${nome}": {
          "data": "${exceldata}",
          "type": "${type}",
          "len": ${tam}
     },\n`
-
+    
     }
   })
   stringGravar += "}";
@@ -94,5 +94,6 @@ for (let i = 0; i < sheets.length; i++) {
   } else if (file.SheetNames[i].search("retorno") >= 0) {
     filename = "retorno/" + file.SheetNames[i].substring(0, file.SheetNames[i].search("retorno") - 1)
   }
+  
   fs.writeFileSync(path.join(__dirname, `Json/${filename}.js`), stringGravar);
 }
