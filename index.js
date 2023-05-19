@@ -3,6 +3,10 @@ const app = require("express")()
 const db_config = require('./db/sql_config');
 const mssql = require("mssql")
 
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
+
+
 const path_registros = "./registroBancario"
 
 const parseToJson = require("./CNBA750/parseCnabToJson")
@@ -102,6 +106,8 @@ app.get("/:id", async (req, res) => {
 
     res.download(path_arquivo);
 })
+
+app.get("/upload")
 
 app.listen(80)
 
