@@ -1,4 +1,5 @@
 module.exports = {
+    "__NOME__": "arquivo_tipo_2",
     /**
         * Significado:
         * `IDENTIFICAÇÃO DO REGISTRO TRANSAÇÃO`

@@ -1,7 +1,6 @@
-json.json
-txt_output.*
-output
 registroBancario
+uploads
+
 # Logs
 logs
 *.log

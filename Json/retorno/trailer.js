@@ -1,4 +1,5 @@
 module.exports = {
+    "__NOME__": "trailer",
     /**
         * Significado:
         * `IDENTIFICAÇÃO DO REGISTRO TRAILER`

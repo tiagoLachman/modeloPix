@@ -1,7 +1,7 @@
 const fs = require('fs');
 const app = require("express")()
 const db_config = require('./db/sql_config');
-const mssql = require("mssql")
+const sql = require("mssql")
 
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
@@ -9,7 +9,7 @@ const upload = multer({ dest: 'uploads/' });
 
 const path_registros = "./registroBancario"
 
-const parseToJson = require("./CNBA750/parseCnabToJson")
+const parseCnabToJson = require("./CNBA750/parseCnabToJson")
 const generateCNAB750 = require("./CNBA750/generator")
 
 
@@ -25,8 +25,8 @@ app.get("/:id", async (req, res) => {
     const id = req.params.id;
     let con, result;
     try {
-        con = await mssql.connect(db_config);
-        result = await mssql.query(`
+        con = await sql.connect(db_config);
+        result = await sql.query(`
             select pp.PpeValor, p.PreChavePix, p.PreCPF, p.PreNome
             from pedidocliente pc 
             join pedidopremiado pp on pp.pecid = pc.pecid
@@ -54,10 +54,10 @@ app.get("/:id", async (req, res) => {
     let lista_dados = [];
     let trailer = trailer_model;
 
-    header.ISPB_PARTICIPANTE.data = "Ver que valor vai aqui"
-    header.CPF_CNPJ.data = "Ver que valor vai aqui"
-    header.CODIGO_DE_INSCRICAO.data = "Ver que valor vai aqui"
-    header.DATA_DE_GERACAO.data = "Ver que valor vai aqui"
+    header.ISPB_PARTICIPANTE.data = "XXXXXXXXXXXXXXXXXXXX"
+    header.CPF_CNPJ.data = "XXXXXXXXXXXXXXXXXXXX"
+    header.CODIGO_DE_INSCRICAO.data = "XXXXXXXXXXXXXXXXXXXX"
+    header.DATA_DE_GERACAO.data = "XXXXXXXXXXXXXXXXXXXX"
     header.VERSAO_DO_ARQUIVO.data = "1"
     header.NUMERO_SEQUENCIAL.data = "1"
     lista_dados.push(header);
@@ -68,11 +68,11 @@ app.get("/:id", async (req, res) => {
         let detalhe = JSON.parse(JSON.stringify(detalhe_model));
 
         detalhe.NOME_DEVEDOR.data = k.PreNome
-        detalhe.CODIGO_DE_INSCRICAO.data = "Ver que valor vai aqui"
+        detalhe.CODIGO_DE_INSCRICAO.data = "XXXXXXXXXXXXXXXXXXXX"
         detalhe.CPF_CNPJ.data = k.PreCPF
         detalhe.CHAVE_Pix.data = k.PreChavePix
-        detalhe.TIPO_COBRANCA.data = "Ver que valor vai aqui"
-        detalhe.COD__DE_OCORRENCIA.data = "Ver que valor vai aqui"
+        detalhe.TIPO_COBRANCA.data = "XXXXXXXXXXXXXXXXXXXX"
+        detalhe.COD__DE_OCORRENCIA.data = "XXXXXXXXXXXXXXXXXXXX"
         detalhe.VALOR_ORIGINAL.data = k.PpeValor
         detalhe.NUMERO_SEQUENCIAL.data = (i + 2).toString()
 
@@ -107,12 +107,13 @@ app.get("/:id", async (req, res) => {
     res.download(path_arquivo);
 })
 
-app.get("/upload")
+app.post("/upload", upload.single('arquivo'), (req, res)=>{
+    let raw_data = fs.readFileSync(req.file.path, "utf-8");
+
+    res.json(parseCnabToJson(raw_data))
+
+
+    fs.rmSync(req.file.path);
+})
 
 app.listen(80)
-
-
-
-
-//let data = fs.readFileSync('./CNBA750_example.txt', { encoding: 'utf8', flag: 'r' });
-//console.log(parseToJson(data));

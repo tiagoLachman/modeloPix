@@ -1,4 +1,5 @@
 module.exports = {
+    "__NOME__": "header",
     /**
         * Significado:
         * `IDENTIFICAÇÃO DO REGISTRO HEADER`

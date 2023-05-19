@@ -1,4 +1,5 @@
 module.exports = {
+    "__NOME__": "detalhe",
     /**
         * Significado:
         * `IDENTIFICAÇÃO DO REGISTRO TRANSAÇÃO`
