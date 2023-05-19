@@ -101,6 +101,7 @@ app.get("/:id", async (req, res) => {
     try {
         //Geração do CNAB750
         let txt_gerado = generateCNAB750(lista_dados);
+
         //Horario para o armazenamento no registro
         let hora_formatada = `${hora_req.getDate()}-${hora_req.getMonth()}-${hora_req.getFullYear()}_${hora_req.getHours()}-${hora_req.getMinutes()}-${hora_req.getSeconds()}-${hora_req.getMilliseconds()}`;
         if (!fs.existsSync(path_registros)) {
